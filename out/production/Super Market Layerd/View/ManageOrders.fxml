@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageOrderContext" prefHeight="1000.0" prefWidth="1584.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrdersController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="1584.0" style="-fx-background-color: #508d46;">
+         <children>
+            <Label layoutX="831.0" layoutY="31.0" text="Date :">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="900.0" layoutY="20.0" prefHeight="57.0" prefWidth="220.0">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="1146.0" layoutY="31.0" text="Time :">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" alignment="CENTER" layoutX="1218.0" layoutY="20.0" prefHeight="57.0" prefWidth="220.0">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="32.0" text="Manage Orders">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="1487.0" layoutY="24.0" onAction="#backOnAction" prefHeight="53.0" prefWidth="65.0" style="-fx-background-color: gray;" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></JFXButton>
+         </children></AnchorPane>
+      <TableView fx:id="tblOrderList" layoutX="79.0" layoutY="152.0" prefHeight="802.0" prefWidth="1439.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="105.00003051757812" text="Order Id" />
+          <TableColumn fx:id="colCustomerId" prefWidth="105.0" text="Customer Id" />
+            <TableColumn fx:id="colCustomerName" prefWidth="269.0" text="Customer Name" />
+            <TableColumn fx:id="colCustomerAddress" minWidth="0.0" prefWidth="308.0" text="Customer Address" />
+            <TableColumn fx:id="colCity" prefWidth="169.0" text="Cty" />
+            <TableColumn fx:id="colProvince" prefWidth="176.0" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="137.0" text="Postal Code" />
+            <TableColumn fx:id="colOrderDate" prefWidth="168.0" text="Order Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

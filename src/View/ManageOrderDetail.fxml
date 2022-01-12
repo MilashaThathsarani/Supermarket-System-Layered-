@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderDetailController">
+   <children>
+      <Label fx:id="lblOrderId" alignment="CENTER" layoutX="192.0" layoutY="90.0" prefHeight="51.0" prefWidth="199.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <TableView fx:id="tblOrderDetail" layoutX="66.0" layoutY="158.0" prefHeight="418.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="173.0" text="Item Code" />
+          <TableColumn fx:id="colQty" prefWidth="210.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="249.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="66.0" layoutY="98.0" text="Order Id :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="31.0" text="Order Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="15.0" layoutY="17.0" prefHeight="0.0" prefWidth="739.0" style="-fx-background-color: black;" />
+      <Separator layoutX="15.0" layoutY="585.0" prefHeight="0.0" prefWidth="739.0" style="-fx-background-color: black;" />
+      <Separator layoutX="14.0" layoutY="17.0" orientation="VERTICAL" prefHeight="569.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Separator layoutX="748.0" layoutY="17.0" orientation="VERTICAL" prefHeight="569.0" prefWidth="5.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

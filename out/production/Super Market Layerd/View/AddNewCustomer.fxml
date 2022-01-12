@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewCustomerContext" prefHeight="795.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerController">
+   <children>
+      <JFXTextField fx:id="txtCustomerTittle" focusColor="#16a085" labelFloat="true" layoutX="43.0" layoutY="172.0" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="312.0" promptText="Customer Tittle">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="CustomerName" focusColor="#16a085" labelFloat="true" layoutX="417.0" layoutY="172.0" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="509.0" promptText="Customer Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="#16a085" labelFloat="true" layoutX="43.0" layoutY="266.0" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="509.0" promptText="Customer Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtCity" focusColor="#16a085" labelFloat="true" layoutX="614.0" layoutY="266.0" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="312.0" promptText="City">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtPostalCode" focusColor="#16a085" labelFloat="true" layoutX="614.0" layoutY="356.0" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="312.0" promptText="Postal Code">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtProvince" focusColor="#16a085" labelFloat="true" layoutX="43.0" layoutY="356.0" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="312.0" promptText="Province">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <Label layoutX="43.0" layoutY="22.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="lblCustomerDetails" layoutX="42.0" layoutY="420.0" prefHeight="344.0" prefWidth="890.0">
+        <columns>
+          <TableColumn fx:id="colId" text="Id" />
+          <TableColumn fx:id="colTittle" prefWidth="92.0" text="Tittle" />
+            <TableColumn fx:id="colName" prefWidth="210.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="164.0" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="120.0" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="129.0" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="94.0" text="Postal Code" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAddCustomer" buttonType="RAISED" layoutX="502.0" layoutY="20.0" onAction="#addOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #16a085;" text="   Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="658.0" layoutY="20.0" onAction="#updateOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #2980b9;" text="       Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="808.0" layoutY="20.0" onAction="#DeleteOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #e74c3c;" text="     Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <TextField fx:id="txtCustomerId" layoutX="39.0" layoutY="85.0" prefHeight="40.0" prefWidth="298.0" promptText="Customer Id" />
+      <JFXTextField fx:id="txtScearchCustomer" focusColor="#16a085" labelFloat="true" layoutX="552.0" layoutY="85.0" onAction="#selectCustomer" onKeyReleased="#textFieldsKeyReleased" prefHeight="40.0" prefWidth="312.0" promptText="Search Customer Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <ImageView fitHeight="53.0" fitWidth="40.0" layoutX="886.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons8-search-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="514.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="672.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/browser.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="821.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/trash.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="13.0" layoutY="11.0" prefHeight="1.0" prefWidth="951.0" style="-fx-background-color: black;" />
+      <Separator layoutX="13.0" layoutY="779.0" prefHeight="1.0" prefWidth="951.0" style="-fx-background-color: black;" />
+      <Separator layoutX="10.0" layoutY="13.0" orientation="VERTICAL" prefHeight="769.0" prefWidth="4.0" style="-fx-background-color: black;" />
+      <Separator layoutX="961.0" layoutY="12.0" orientation="VERTICAL" prefHeight="769.0" prefWidth="4.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

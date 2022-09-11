@@ -1,6 +1,6 @@
-## Eco Super Market
+# *Eco Super Market_.*
 
-### This application developed by java,javafx,mysql and layered architecture.
+## This application developed by java,javafx,mysql and layered architecture.....
     
     Screenshot...
     
